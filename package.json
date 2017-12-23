@@ -1,0 +1,43 @@
+{
+  "name": "css-grid-demo",
+  "version": "0.1.0",
+  "description": "This is a demo spa for css-grid",
+  "main": "index.js",
+  "scripts": {
+    "install-fix": "npm i --only=\"production\" && npm i --only=\"dev\" --registry=https://registry.npmjs.org",
+    "build": "webpack --colors --watch",
+    "build-minified": "webpack --minify --bail",
+    "serve": "live-server --host=localhost --port=3000 --watch=./dist/app/index.html,./dist/app/app.min.js,./dist/app/config.json --open=./dist/app",
+    "start": "concurrently --success first --kill-others \"npm run build\" \"npm run serve\""
+  },
+  "author": "steve cowie",
+  "license": "",
+  "dependencies": {
+    "vue": "^2.1.10",
+    "vue-resource": "^1.2.0",
+    "vue-router": "^2.2.0"
+  },
+  "devDependencies": {
+    "b2b-eslint": "^0.5.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-runtime": "^6.23.0",
+    "concurrently": "^2.2.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.24.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "live-server": "^1.1.0",
+    "progress-bar-webpack-plugin": "^1.9.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.2",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.2",
+    "yargs": "^6.5.0"
+  }
+}
