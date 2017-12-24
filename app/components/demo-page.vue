@@ -26,12 +26,9 @@ p {
 }
 
 .container {
-  /*
-  margin: 40px auto;
-  max-width: 700px;*/
   display: grid;
   grid-template-columns: 8em auto 8em;
-  grid-template-rows: 3em auto auto auto 3em;
+  grid-template-rows: 5em auto auto auto 3em;
 }
 
 header {
@@ -131,7 +128,14 @@ footer {
 
 <template>
   <div class="container">
-  <header>Header</header>
+  <header>
+    <md-toolbar>
+      <h3 class="md-title" style="flex: 1">Title</h3>
+      <md-button class="md-icon-button">
+        <md-icon>more_vert</md-icon>
+      </md-button>
+    </md-toolbar>
+  </header>
   <article>
     <p>“It is very sad then that so many children are hurried along and not given time to think about themselves. People say to them when they think that they have been playing long enough: “You are no longer a child. You must begin to do something.” But although playing is doing nothing, you are really doing something when you play; you are thinking about yourself. Many children play in the wrong way. They make work out of play. They not only seem to be doing something, they really are doing something. They are imitating the grown-ups around them who are always doing as much instead of as little as possible. And they are often encouraged to play in this way by the grown-ups. And they are not learning to be themselves.”</p>
     <p>“There are many people who are not entirely themselves because as children they were not given time to think about themselves. And because they don’t know everything about themselves they can’t know everything about everything. But no one likes to admit that she doesn’t know everything about everything. And so these people try to make up for not knowing everything about everything by doing things.”</p>
