@@ -4,10 +4,12 @@ import vueResource from 'vue-resource'
 import vueRouter from 'vue-router'
 import appContainer from './components/app-container.vue'
 import demoPage from './components/demo-page.vue'
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
+// import VueMaterial from 'vue-material'
+// import 'vue-material/dist/vue-material.min.css'
+import Theme from 'b2b-theme'
+import 'b2b-theme/dist/b2b-theme.min.css'
 
-vue.use(VueMaterial)
+// vue.use(VueMaterial)
 vue.use(vueResource)
 vue.use(vueRouter)
 vue.config.devtools = false
@@ -19,6 +21,7 @@ vue.config.devtools = false
         this.isLoading = true
 
         document.addEventListener("DOMContentLoaded", () => {
+          Theme.init()
             
           this.isLoading = false
       
